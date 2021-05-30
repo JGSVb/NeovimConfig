@@ -39,9 +39,6 @@ let g:embark_terminal_italics = 1
 " Gruvbox
 let gruvbox_contrast_dark = 'hard'
 
-colorscheme gruvbox
-
-syntax on
 
 " Mostrar os números
 set number
@@ -52,11 +49,19 @@ set relativenumber
 " Cores RGB24
 set termguicolors
 
-au BufEnter *.c* syn keyword cType const
+colorscheme gruvbox
+
+syntax on
+
+au BufEnter *.c* syn keyword cType const |
+			\ set autoindent   |
+			\ set noexpandtab  |
+			\ set tabstop=2    |
+			\ set shiftwidth=2
 
 """"""""""
 " Outros "
 """"""""""
 
-" O mínimo de linhas que podem aparecer na tela 
-set scrolloff=20
+" scroll offset 
+set scrolloff=10

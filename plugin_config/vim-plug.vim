@@ -13,6 +13,7 @@ Plug 'kyazdani42/nvim-web-devicons'
 
 " Pacote de linguagens de programação
 Plug 'sheerun/vim-polyglot'
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}  " We recommend updating the parsers on update
 
 " Navegador de ficheiros bonito
 Plug 'mcchrish/nnn.vim'
@@ -49,7 +50,6 @@ Plug 'luochen1990/rainbow'
 " Fechar e abrir pares de ', (, {, ...
 Plug 'jiangmiao/auto-pairs'
 
-
 """""""""
 " Temas "
 """""""""
@@ -71,8 +71,13 @@ Plug 'nightsense/cosmic_latte'
 Plug 'sainnhe/edge'
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'romgrk/doom-one.vim'
-Plug 'drewtempelmeyer/palenight.vim'
 Plug 'morhetz/gruvbox'
 Plug 'bluz71/vim-moonfly-colors'
+Plug 'murilo-menezes/palenight.lua'
+" Plug 'drewtempelmeyer/palenight.vim'
+
+" Mais temas que muito provavelmente não irei utilizar
+Plug 'flazz/vim-colorschemes'
+Plug 'epeery/vim-ugly'
 
 call plug#end()
