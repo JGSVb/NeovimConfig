@@ -34,6 +34,7 @@ require("nightfox").load("nightfox")
 
 require("plugin_config")
 
-local colors = require("nightfox.colors").load()
+local colors = require("nightfox.palette")
+vim.cmd("colorscheme nightfox")
 local hi_cmd = string.format("hi VertSplit guibg=%s", colors.bg_alt)
 vim.cmd("autocmd WinNew * "..hi_cmd)
