@@ -22,7 +22,7 @@ vim.o.list = true
 vim.opt.listchars = { tab = "│ " }
 vim.opt.fillchars = { vert = " " }
 
-vim.o.scrolloff = 10
+-- vim.o.scrolloff = 10
 
 -- Netrw
 vim.g.netrw_banner	= 0
@@ -36,5 +36,5 @@ require("plugin_config")
 
 local colors = require("nightfox.palette")
 vim.cmd("colorscheme nightfox")
-local hi_cmd = string.format("hi VertSplit guibg=%s", colors.bg_alt)
+local hi_cmd = "hi vertSplit guibg=gray"
 vim.cmd("autocmd WinNew * "..hi_cmd)
