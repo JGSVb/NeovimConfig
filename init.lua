@@ -13,8 +13,8 @@ vim.o.showmode = false
 vim.o.autochdir = true
 
 -- Tabs e indentação
-vim.o.tabstop	 = 4
-vim.o.shiftwidth = 4
+vim.o.tabstop	 = 8 
+vim.o.shiftwidth = 8
 vim.o.smartindent = true
 vim.o.expandtab = false
 
